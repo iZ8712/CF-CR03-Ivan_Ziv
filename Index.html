@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <title>insuranceCF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+
+<body>
+
+    <header>
+        <div id="header">
+            
+            <img id="header_logo" src="css/img/logo.png">
+            
+            
+            <a href="https://www.codefactory.wien"><img id="header_banner" src="css/img/banner.png"></a>
+            
+        </div>
+        
+    </header>
+    
+        <nav id="navtop">
+            
+            <ul class="navul">
+            
+                <li class="navli"><a href="Index.html">Home</li></a>
+                <li class="navli"><a href="Team.html">Team</li></a>
+                
+            </ul>        
+            
+        </nav>
+
+    <div id="BG">
+    
+        <div id="BG1">
+
+            <p id="hline">Car insurance</p>
+        
+        </div>
+
+        <div id="BG2">
+
+            <p id="ph">Un-complicating car coverage</p>
+            <p class="pt">Understanding your coverage options shouldn't be so hard.</p>
+            <p class="pt">We'll guide you through available coverage types,</p>
+            <p class="pt">starting with who and what is coverd.</p> 
+
+        </div>
+
+        <div id="overlay">
+
+            <div id="ov_form">
+
+                    <p class="ov_formH">Great coverage begins</p> 
+                    <p class="ov_formH">with a custom quote</p>
+
+                <div id="ov_formBox"> 
+
+                    <div class="ov_formBox1">
+
+                        <p class="ov_formBoNa">Your Name:</p>
+
+                        <input class="input" id="nameInput"type="text">
+
+                        <p class="ov_formBoNa">Country:</p>
+
+                        <select class="input" name="Country" id="countryInput">
+
+                            <option value="austria">Austria</option>
+                            <option value="hungary">Hungary</option>
+                            <option value="greece">Greece</option>
+                        
+                        </select>
+                        
+                    </div>
+
+                    <div class="ov_formBox1">
+
+                        <p class="ov_formBoNa">Age:</p>
+
+                        <input class="input" id="ageInput" type="number" value="18" min="18" max="115" maxlength="3"> <!-- I used min, max and length to limit the Input-->
+
+                        <p class="ov_formBoNa">Horsepower of your car:</p>
+
+                        <input class="input" id="horseInput" type="number" value="50" min="50" max="1200" maxlength="4"> <!-- I used min, max and length to limit the Input-->
+
+                    </div>
+
+                </div>
+
+                    <div id="check"><button onclick="calculateInsurance()" id="check1">Calculate</button></div> <!--I decided to run the function from here.-->
+
+                    <p id="res"></p>
+
+        </div>
+
+    </div>
+
+    <div id="BG3">
+        
+        <div class="infobox" id="in1">
+            
+            <p class="infobox_h1">What comes standard</p>
+            <p class="infobox_p">The coverage you need</p>
+
+            <ul class="boxul">
+                
+                <li class="boxli">Bodily Injury Liability</li>
+                <li class="boxli">Property Damage</li>
+                <li class="boxli">Medical Payments</li>
+
+            </ul>
+
+            <hr>
+
+            <p class="infobox_h3">Benefits</p>
+            <p class="infobox_p1">12-month rate quarantee | 24/7 customer service | Lifetime Repair Guarantee</p>
+
+        </div>
+
+        <div class="infobox" id="in2">
+            
+            <p class="infobox_h1">Add-on protection & coverage</p>
+            <p class="infobox_p">For more peace of mind</p>
+
+            <ul class="boxul">
+                
+                <li class="boxli">Better Car Replacement</li>
+                <li class="boxli">Towing & Labor</li>
+                <li class="boxli">Rental Car Coverage</li>
+
+            </ul>
+
+            <hr>
+
+            <p class="infobox_h3">Earned Benefits</p>
+            <p class="infobox_p1">Accident Forgiveness<sup>1</sup> | Nes Car<br>Replacement<sup>TM</sup></p>
+
+        </div>
+
+    </div>
+
+    <footer>
+        
+        <nav id="navbottom">
+            
+            <ul class="navul">
+                
+                <li class="navli"><a href="Index.html">Home</li></a>
+                <li class="navli"><a href="Team.html">Team</li></a>
+                
+            </ul>        
+            
+        </nav>
+        
+        <div id="footer">
+            
+        <img id="footer_logo" src="css/img/logo-inv.png">
+        
+        <p>Ivan Zivanovic-CodeFactory 2021</p>
+        
+        </div>
+        
+    </footer>    
+        
+        <script src="javascript/JavSc.js"></script>
+
+</body>
+
+
+</html>
